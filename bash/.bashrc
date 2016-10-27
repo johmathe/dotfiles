@@ -37,7 +37,9 @@ export NACL_SDK_ROOT="/Users/johmathe/code/chrome_app/nacl_sdk/pepper_44"
 export PATH=$PATH:/home/johmathe/.local/bin
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/johmathe/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/home/johmathe/google-cloud-sdk/completion.bash.inc'
+CLOUD_FILE='/home/$USER/google-cloud-sdk/path.bash.inc'
+COMPLETION_FILE='/home/$USER/google-cloud-sdk/completion.bash.inc'
+if [[ -e $CLOUD_FILE ]]; then
+    source $CLOUD_FILE
+    source $COMPLETION_FILE
+fi
