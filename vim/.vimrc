@@ -3,7 +3,7 @@ vmap <C-c> :w! ~/.vimbuffer<CR>
 nmap <C-c> :.w! ~/.vimbuffer<CR>
 " paste from buffer
 map <C-p> :r ~/.vimbuffer<CR>
-set mouse=a
+set mouse=r
 execute pathogen#infect()
 filetype indent plugin on
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
