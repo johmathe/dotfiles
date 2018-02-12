@@ -43,3 +43,11 @@ let g:flake8_show_in_gutter=1
 map <C-O> :call yapf#YAPF()<cr>
 imap <C-O> <c-o>:call yapf#YAPF()<cr>
 autocmd BufWritePre * :%s/\s\+$//e
+
+
+" map <C-B>:w | make -f Makefile.arm|copen
+" map <C-N>:cn
+map <C-B> :make -f Makefile.arm<bar>copen<cr>
+map <C-N> :cn<cr>
+
+
