@@ -30,9 +30,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
 export PATH=$PATH:/usr/local/arcanist/arcanist/bin
 export PATH=$PATH:/usr/local/cuda/bin:/Users/johmathe/code/depot_tools
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(parse_git_branch)\$\[\033[00m\] '
-export PYTHONPATH=$PYTHONPATH:/Users/johmathe/code/caffe/python:/home/johmathe/code/keras/:/Users/johmathe/code/keras/:/usr/local/caffe/python
 export VISUAL=${EDITOR}
-export NACL_SDK_ROOT="/Users/johmathe/code/chrome_app/nacl_sdk/pepper_44"
 
 export PATH=$PATH:/home/johmathe/.local/bin
 
