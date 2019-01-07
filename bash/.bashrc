@@ -43,4 +43,4 @@ if [[ -e $CLOUD_FILE ]]; then
 fi
 
 . $HOME/.ssh/saveagent
-alias 'tma' 'tmux attach ; . $HOME/.ssh/latestagent'
+alias tma='tmux attach ; . $HOME/.ssh/latestagent'
