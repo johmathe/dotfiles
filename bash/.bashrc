@@ -41,3 +41,6 @@ if [[ -e $CLOUD_FILE ]]; then
     source $CLOUD_FILE
     source $COMPLETION_FILE
 fi
+
+. $HOME/.ssh/saveagent
+alias 'tma' 'tmux attach ; . $HOME/.ssh/latestagent'
