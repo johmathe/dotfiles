@@ -26,20 +26,10 @@ syntax on
 "set list listchars=tab:\ \ ,trail:·
 autocmd BufWritePost *.py call Flake8()
 
-if has('statusline')
-  set laststatus=2
-  " Broken down into easily includeable segments
-  set statusline=%<%f\    " Filename
-  set statusline+=%w%h%m%r " Options
-  set statusline+=%{fugitive#statusline()} "  Git Hotness
-  set statusline+=\ [%{&ff}/%Y]            " filetype
-  set statusline+=\ [%{getcwd()}]          " current dir
-  set statusline+=%#warningmsg#
-  set statusline+=%*
-  let g:syntastic_enable_signs=1
-  set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
-endif
+let g:AirlineTheme = powerlineish
 let g:flake8_show_in_gutter=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
 map <C-O> :call yapf#YAPF()<cr>
 imap <C-O> <c-o>:call yapf#YAPF()<cr>
 autocmd BufWritePre * :%s/\s\+$//e
@@ -47,7 +37,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " map <C-B>:w | make -f Makefile.arm|copen
 " map <C-N>:cn
-map <C-B> :make -f Makefile.arm<bar>copen<cr>
+map <C-B> :Denite file/rec<cr>
 map <C-N> :cn<cr>
 
 

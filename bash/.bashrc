@@ -25,9 +25,9 @@ if [[ -e /usr/bin/most ]]; then
 fi
 export CLICOLOR=1
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/caffe/lib/
-export EDITOR=/usr/bin/vim
+export EDITOR=vim
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
-export PATH=$PATH:/usr/local/arcanist/arcanist/bin:~/bin
+export PATH=/usr/local/bin/:$PATH:/usr/local/arcanist/arcanist/bin:~/bin
 export PATH=$PATH:/usr/local/cuda/bin:/Users/johmathe/code/depot_tools
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(parse_git_branch)\$\[\033[00m\] '
 export VISUAL=${EDITOR}
