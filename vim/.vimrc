@@ -19,9 +19,11 @@ set nu
 set ruler
 set shiftwidth=4
 set softtabstop=4
+let color = 'dracula'
 set tabstop=8
 set wrap "Wrap lines
 syntax on
+color dracula
 "set list listchars=tab:\ \ ,trail:·
 autocmd BufWritePost *.py call Flake8()
 

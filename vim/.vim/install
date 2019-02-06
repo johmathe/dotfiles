@@ -1,4 +1,4 @@
-git submodule add git@github.com:tpope/vim-fugitive.git bundle/fugitive
+igit submodule add git@github.com:tpope/vim-fugitive.git bundle/fugitive
 git submodule add git@github.com:tpope/vim-surround.git bundle/surround
 git submodule add git@github.com:tpope/vim-git.git bundle/git
 git submodule add git@github.com:Shougo/neosnippet.vim.git bundle/neosnippet
@@ -17,6 +17,7 @@ git submodule add git@github.com:vim-scripts/The-NERD-tree.git bundle/nerdtree
 git submodule add git@github.com:python-rope/ropevim.git bundle/ropevim
 git submodule add git@github.com:vim-airline/vim-airline.git bundle/airline
 git submodule add git@github.com:vim-airline/vim-airline-themes.git bundle/airline-themes
+git submodule add git@github.com:dracula/vim.git bundle/dracula-theme
 git submodule add git@github.com:Shougo/denite.nvim.git bundle/denite.nvim
 git submodule init
 git submodule update
