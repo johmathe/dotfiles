@@ -13,3 +13,6 @@ done;
 
 set +e
 set +x
+
+mkdir ~/bin
+curl https://www.iterm2.com/utilities/imgcat > ~/bin/imgcat && chmod 755 ~/bin/imgcat
