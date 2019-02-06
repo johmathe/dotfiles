@@ -10,7 +10,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:mapleader = ","
 let mapleader = ","
 nnoremap <leader>v <Plug>TaskList
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 set background=dark
 set expandtab
 set gcr=a:blinkon0
@@ -26,7 +25,7 @@ syntax on
 "set list listchars=tab:\ \ ,trail:·
 autocmd BufWritePost *.py call Flake8()
 
-let g:AirlineTheme = powerlineish
+let g:airline_theme='dracula'
 let g:flake8_show_in_gutter=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
@@ -39,5 +38,3 @@ autocmd BufWritePre * :%s/\s\+$//e
 " map <C-N>:cn
 map <C-B> :Denite file/rec<cr>
 map <C-N> :cn<cr>
-
-
