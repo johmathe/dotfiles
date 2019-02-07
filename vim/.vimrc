@@ -35,7 +35,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 map <C-O> :call yapf#YAPF()<cr>
 imap <C-O> <c-o>:call yapf#YAPF()<cr>
 autocmd BufWritePre * :%s/\s\+$//e
-
+set clipboard=unnamed
 
 " map <C-B>:w | make -f Makefile.arm|copen
 " map <C-N>:cn
