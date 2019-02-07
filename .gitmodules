@@ -67,3 +67,6 @@
 [submodule "vim/.vim/bundle/dracula-theme"]
 	path = vim/.vim/bundle/dracula-theme
 	url = git@github.com:dracula/vim.git
+[submodule "vim/.vim/bundle/jedi-vim"]
+	path = vim/.vim/bundle/jedi-vim
+	url = git@github.com:davidhalter/jedi-vim.git

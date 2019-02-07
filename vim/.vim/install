@@ -1,9 +1,8 @@
-igit submodule add git@github.com:tpope/vim-fugitive.git bundle/fugitive
+git submodule add git@github.com:tpope/vim-fugitive.git bundle/fugitive
 git submodule add git@github.com:tpope/vim-surround.git bundle/surround
 git submodule add git@github.com:tpope/vim-git.git bundle/git
 git submodule add git@github.com:Shougo/neosnippet.vim.git bundle/neosnippet
 git submodule add git@github.com:ervandew/supertab.git bundle/supertab
-git submodule add git@github.com:sontek/minibufexpl.vim.git bundle/minibufexpl
 git submodule add git@github.com:wincent/Command-T.git bundle/command-t
 git submodule add git@github.com:mitechie/pyflakes-pathogen.git
 git submodule add git@github.com:mileszs/ack.vim.git bundle/ack
@@ -19,6 +18,7 @@ git submodule add git@github.com:vim-airline/vim-airline.git bundle/airline
 git submodule add git@github.com:vim-airline/vim-airline-themes.git bundle/airline-themes
 git submodule add git@github.com:dracula/vim.git bundle/dracula-theme
 git submodule add git@github.com:Shougo/denite.nvim.git bundle/denite.nvim
+git submodule add git@github.com:davidhalter/jedi-vim.git bundle/jedi-vim
 git submodule init
 git submodule update
 git submodule foreach git submodule init

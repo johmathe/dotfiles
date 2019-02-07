@@ -3,7 +3,7 @@ vmap <C-c> :w! ~/.vimbuffer<CR>
 nmap <C-c> :.w! ~/.vimbuffer<CR>
 " paste from buffer
 map <C-p> :r ~/.vimbuffer<CR>
-set mouse=r
+set mouse=a
 execute pathogen#infect()
 filetype indent plugin on
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
@@ -27,7 +27,7 @@ syntax on
 color dracula
 "set list listchars=tab:\ \ ,trail:·
 autocmd BufWritePost *.py call Flake8()
-
+set backspace=indent,eol,start " backspace over everything in insert mode
 let g:airline_theme='powerlineish'
 let g:flake8_show_in_gutter=1
 let g:airline#extensions#tabline#enabled = 1
