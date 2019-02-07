@@ -22,6 +22,7 @@ set softtabstop=4
 let color = 'dracula'
 set tabstop=8
 set wrap "Wrap lines
+let g:airline_solarized_bg='dark'
 syntax on
 color dracula
 "set list listchars=tab:\ \ ,trail:·
