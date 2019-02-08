@@ -15,4 +15,3 @@ for f in .vim{rc,}; do
     ln -sf $(pwd)/$f ~/$f;
 done;
 
-./build_command-t.sh
