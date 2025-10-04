@@ -143,4 +143,4 @@ PS1='\n$(get_return_code_fast)$(get_conda_env_fast)\[\033[38;5;109m\]👤\u\[\03
 
 . "$HOME/.local/bin/env"
 
-export PATH=$PATH:/home/johmathe/.local/bin
+export PATH=$PATH:/home/johmathe/bin:/home/johmathe/.local/bin
