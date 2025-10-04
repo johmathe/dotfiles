@@ -140,3 +140,7 @@ get_return_code_fast() {
 
 # Super fast PS1 with emojis
 PS1='\n$(get_return_code_fast)$(get_conda_env_fast)\[\033[38;5;109m\]👤\u\[\033[0m\] \[\033[38;5;67m\]💻\h\[\033[0m\] \[\033[38;5;108m\]📁\w\[\033[0m\]$(parse_git_branch_fast) \[\033[38;5;103m\]🕐\t\[\033[0m\]\n\[\033[38;5;110m\]❯\[\033[0m\] '
+
+. "$HOME/.local/bin/env"
+
+export PATH=$PATH:/home/johmathe/.local/bin
